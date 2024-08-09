@@ -2,13 +2,9 @@ import { program } from 'commander'
 import puppeteer from 'puppeteer'
 import which from 'which'
 
-program
-  .argument('[regex]', 'regular expression to filter video titles by')
-  .requiredOption('-c, --channel <name>', 'YouTube channel name')
-
+program.argument('<channel>', 'YouTube channel name')
 program.parse()
-const regex = new RegExp(program.args[0] ?? '.*')
-const { channel } = program.opts()
+const channel = program.args[0]
 
 const browser = await puppeteer.launch({
   browser: 'firefox',
@@ -17,11 +13,10 @@ const browser = await puppeteer.launch({
 const page = await browser.newPage()
 
 await page.goto(`https://www.youtube.com/${channel}/videos`)
-const results = await page.$$eval('#video-title', (nodes, regex) => nodes
-  .filter(e => regex.test(e.textContent as string))
-  .map(e => ({ link: (e.parentElement as HTMLLinkElement).href, title: e.textContent })),
-  regex
-)
+const results = await page.$$eval('#video-title', (els) => els.map(el => ({
+  link: (el.parentElement as HTMLAnchorElement).href,
+  title: el.textContent
+})))
 
 for (const { link, title } of results.reverse()) {
   console.log(`[\x1b]8;;${link}\x1b\\Link\x1b]8;;\x1b\\] ${title}`)
