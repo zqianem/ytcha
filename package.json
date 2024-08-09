@@ -1,15 +1,15 @@
 {
   "name": "ytcha",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI that lists the latest videos from a YouTube channel",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["youtube", "channel", "videos", "list"],
+  "author": "Em Zhan",
+  "license": "MIT",
   "packageManager": "bun",
   "dependencies": {
     "commander": "^12.1.0",
