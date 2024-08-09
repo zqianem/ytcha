@@ -1,5 +1,6 @@
 import { program } from 'commander'
 import puppeteer from 'puppeteer'
+import which from 'which'
 
 program
   .argument('[regex]', 'regular expression to filter video titles by')
@@ -9,7 +10,10 @@ program.parse()
 const regex = new RegExp(program.args[0] ?? '.*')
 const { channel } = program.opts()
 
-const browser = await puppeteer.launch({ browser: 'firefox' })
+const browser = await puppeteer.launch({
+  browser: 'firefox',
+  executablePath: await which('firefox'),
+})
 const page = await browser.newPage()
 
 await page.goto(`https://www.youtube.com/${channel}/videos`)
