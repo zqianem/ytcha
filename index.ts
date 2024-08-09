@@ -2,7 +2,7 @@ import { program } from 'commander'
 import puppeteer from 'puppeteer'
 import which from 'which'
 
-program.argument('<channel>', 'YouTube channel name')
+program.argument('<channel>', 'YouTube channel name, e.g. @EthosLab')
 program.parse()
 const channel = program.args[0]
 
