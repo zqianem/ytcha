@@ -23,7 +23,7 @@ const results = await page.$$eval('#video-title', (nodes, regex) => nodes
   regex
 )
 
-for (const { link, title } of results) {
+for (const { link, title } of results.reverse()) {
   console.log(`[\x1b]8;;${link}\x1b\\Link\x1b]8;;\x1b\\] ${title}`)
 }
 
