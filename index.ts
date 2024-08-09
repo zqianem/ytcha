@@ -13,10 +13,15 @@ const browser = await puppeteer.launch({
 const page = await browser.newPage()
 
 await page.goto(`https://www.youtube.com/${channel}/videos`)
-const results = await page.$$eval('#video-title', (els) => els.map(el => ({
-  link: (el.parentElement as HTMLAnchorElement).href,
-  title: el.textContent
+const results = await page.$$eval('a#video-title-link', (els) => els.map(el => ({
+  link: el.href,
+  title: el.querySelector('#video-title')?.textContent
 })))
+
+if (!results.length) {
+  console.error('No videos found: CSS selectors may be out of date')
+  process.exit(1)
+}
 
 for (const { link, title } of results.reverse()) {
   console.log(`[\x1b]8;;${link}\x1b\\Link\x1b]8;;\x1b\\] ${title}`)
