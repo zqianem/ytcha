@@ -18,8 +18,8 @@ const page = await browser.newPage()
 
 await page.goto(`https://www.youtube.com/${channel}/videos`)
 const results = await page.$$eval('#video-title', (nodes, regex) => nodes
-  .filter(e => regex.test(e.textContent))
-  .map(e => ({ link: e.parentElement.href, title: e.textContent })),
+  .filter(e => regex.test(e.textContent as string))
+  .map(e => ({ link: (e.parentElement as HTMLLinkElement).href, title: e.textContent })),
   regex
 )
 
