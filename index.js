@@ -22,8 +22,9 @@ const results = await page.$$eval('#video-title', (nodes, regex) => nodes
   .map(e => ({ link: e.parentElement.href, title: e.textContent })),
   regex
 )
+
 for (const { link, title } of results) {
-  console.log(`\x1b]8;;${link}\x1b\\${title}\x1b]8;;\x1b\\`)
+  console.log(`[\x1b]8;;${link}\x1b\\Link\x1b]8;;\x1b\\] ${title}`)
 }
 
 await browser.close()
