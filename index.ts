@@ -12,14 +12,15 @@ const browser = await puppeteer.launch({
 })
 const page = await browser.newPage()
 
-await page.goto(`https://www.youtube.com/${channel}/videos`)
+const url = `https://www.youtube.com/${channel}/videos`
+await page.goto(url)
 const results = await page.$$eval('a#video-title-link', (els) => els.map(el => ({
   link: el.href,
   title: el.querySelector('#video-title')?.textContent
 })))
 
 if (!results.length) {
-  console.error('No videos found: CSS selectors may be out of date')
+  console.error(`No videos found at ${url}`)
   process.exit(1)
 }
 
