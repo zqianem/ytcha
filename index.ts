@@ -2,24 +2,37 @@ import { program } from 'commander'
 import puppeteer from 'puppeteer'
 import which from 'which'
 
-program.argument('<channel>', 'YouTube channel name, e.g. @EthosLab')
+program
+  .argument('<channel>', 'YouTube channel name, e.g. @EthosLab')
+  .option('--browser <binary>', 'binary name of headless browser to use, e.g. firefox')
 program.showHelpAfterError();
 program.allowExcessArguments(false)
 program.parse()
-const channel = program.args[0]
+const options = program.opts()
 
-let executablePath: string
-try {
-  executablePath = await which('firefox')
-} catch {
-  console.error('Firefox is required but not installed')
+const executablePath = options.browser
+  ? await which(options.browser)
+    .catch(() => undefined)
+  : await which('brave')
+    .catch(() => which('chromium'))
+    .catch(() => which('chrome'))
+    .catch(() => which('firefox'))
+    .catch(() => undefined)
+
+if (!executablePath) {
+  console.error(options.browser
+    ? `Browser '${options.browser}' not found`
+    : `Install Firefox or Chrome or use option '--browser'`)
   process.exit(1)
 }
 
-const browser = await puppeteer.launch({ browser: 'firefox', executablePath })
+const browser = await puppeteer.launch({
+  browser: executablePath.includes('fox') ? 'firefox' : 'chrome',
+  executablePath
+})
 const page = await browser.newPage()
 
-const url = `https://www.youtube.com/${channel}/videos`
+const url = `https://www.youtube.com/${program.args[0]}/videos`
 await page.goto(url)
 const results = await page.$$eval('a#video-title-link', (els) => els.map(el => ({
   link: el.href,
