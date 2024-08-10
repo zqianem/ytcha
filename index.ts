@@ -56,4 +56,4 @@ if (options.json) {
   }
 }
 
-await browser.close()
+process.exit(0)
