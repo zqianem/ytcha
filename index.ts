@@ -2,32 +2,29 @@ import { program } from 'commander'
 import puppeteer from 'puppeteer'
 import which from 'which'
 
-program
-  .argument('<channel>', 'YouTube channel name, e.g. @EthosLab')
-  .option('--browser <binary>', 'binary name of headless browser to use, e.g. firefox')
+program.argument('<channel>', 'YouTube channel name, e.g. @EthosLab')
 program.showHelpAfterError();
 program.allowExcessArguments(false)
 program.parse()
-const options = program.opts()
 
-const executablePath = options.browser
-  ? await which(options.browser)
-    .catch(() => undefined)
-  : await which('brave')
-    .catch(() => which('chromium'))
-    .catch(() => which('chrome'))
-    .catch(() => which('firefox'))
-    .catch(() => undefined)
+const browsers = [
+  'brave',
+  'chromium',
+  'chrome',
+  'firefox'
+]
+
+const executablePath = await browsers.reduce(async (prev, curr) => {
+  return (await prev) ? prev : which(curr).catch(() => undefined)
+}, Promise.resolve(undefined) as Promise<string | undefined>)
 
 if (!executablePath) {
-  console.error(options.browser
-    ? `Browser '${options.browser}' not found`
-    : `Install Firefox or Chrome or use option '--browser'`)
+  console.error('No compatible browser found for web scraping')
   process.exit(1)
 }
 
 const browser = await puppeteer.launch({
-  browser: executablePath.includes('fox') ? 'firefox' : 'chrome',
+  browser: executablePath.includes('firefox') ? 'firefox' : 'chrome',
   executablePath
 })
 const page = await browser.newPage()
