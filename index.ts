@@ -45,7 +45,7 @@ if (!results.length) {
 }
 
 for (const { link, title } of results.reverse()) {
-  console.log(`[\x1b]8;;${link}\x1b\\Link\x1b]8;;\x1b\\] ${title}`)
+  console.log(`\x1b]8;;${link}\x1b\\🔗\x1b]8;;\x1b\\ ${title}`)
 }
 
 await browser.close()
