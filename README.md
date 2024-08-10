@@ -11,7 +11,7 @@ See `ytcha --help` for details.
 ytcha ethoslab
 ```
 
-Output (including OSC 8 links):
+Output (including [OSC 8 links](https://github.com/Alhadis/OSC8-Adoption)):
 
 ```txt
 🔗 Secret Life #1 - Everyone Must Sleep! • 9 months ago
@@ -48,12 +48,12 @@ Output (including OSC 8 links):
 
 ## Installation
 
-Requires [Bun](https://bun.sh), for now.
+Requires [Bun](https://bun.sh), for now; adjust `--outfile` as needed:
 
 ```sh
 git clone https://github.com/zqianem/ytcha
 cd ytcha
-bun run local-install
+bun build ./index.ts --compile --outfile ~/.local/bin/ytcha
 ```
 
 Might make this installable via NPM later.
