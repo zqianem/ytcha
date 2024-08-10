@@ -2,10 +2,15 @@ import { program } from 'commander'
 import puppeteer from 'puppeteer'
 import which from 'which'
 
-program.argument('<channel>', 'YouTube channel name, e.g. @EthosLab')
-program.showHelpAfterError();
-program.allowExcessArguments(false)
-program.parse()
+program
+  .argument('<channel>', 'YouTube channel name, e.g. @EthosLab')
+  .option('--json', 'print output in JSON')
+  .showHelpAfterError()
+  .allowExcessArguments(false)
+  .parse()
+
+const channel = program.args[0]
+const options = program.opts()
 
 const browsers = [
   'brave',
@@ -29,7 +34,7 @@ const browser = await puppeteer.launch({
 })
 const page = await browser.newPage()
 
-const url = `https://www.youtube.com/${program.args[0]}/videos`
+const url = `https://www.youtube.com/${channel}/videos`
 await page.goto(url)
 const results = await page.$$eval('a#video-title-link', (els) => els.map(el => ({
   link: el.href,
@@ -41,8 +46,14 @@ if (!results.length) {
   process.exit(1)
 }
 
-for (const { link, title } of results.reverse()) {
-  console.log(`\x1b]8;;${link}\x1b\\🔗\x1b]8;;\x1b\\ ${title}`)
+results.reverse()
+
+if (options.json) {
+  console.log(JSON.stringify(results)) 
+} else {
+  for (const { link, title } of results) {
+    console.log(`\x1b]8;;${link}\x1b\\🔗\x1b]8;;\x1b\\ ${title}`)
+  }
 }
 
 await browser.close()
