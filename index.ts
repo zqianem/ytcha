@@ -42,9 +42,16 @@ const page = await puppet.newPage()
 
 const url = `https://www.youtube.com/${channel}/videos`
 await page.goto(url)
+
 const results = await page.$$eval('a#video-title-link', (els) => els.map(el => ({
   link: el.href,
-  title: el.querySelector('#video-title')?.textContent
+  title: el
+    .querySelector('#video-title')
+    ?.textContent,
+  timestamp: el
+    .closest('#meta')
+    ?.querySelector('.inline-metadata-item:nth-of-type(2)')
+    ?.textContent,
 })))
 
 if (!results.length) {
@@ -56,9 +63,10 @@ results.reverse()
 
 if (options.json) {
   console.log(JSON.stringify(results)) 
+
 } else {
-  for (const { link, title } of results) {
-    console.log(`\x1b]8;;${link}\x1b\\🔗\x1b]8;;\x1b\\ ${title}`)
+  for (const { link, title, timestamp } of results) {
+    console.log(`\x1b]8;;${link}\x1b\\🔗\x1b]8;;\x1b\\ ${title} \x1b[2m• ${timestamp}\x1b[22m`)
   }
 }
 
