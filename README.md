@@ -53,6 +53,7 @@ Requires [Bun](https://bun.sh), for now; adjust `--outfile` as needed:
 ```sh
 git clone https://github.com/zqianem/ytcha
 cd ytcha
+bun install
 bun build ./index.ts --compile --outfile ~/.local/bin/ytcha
 ```
 
