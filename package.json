@@ -19,7 +19,6 @@
     "which": "^4.0.0"
   },
   "devDependencies": {
-    "@types/which": "^3.0.4",
-    "typescript": "^5.5.4"
+    "@types/which": "^3.0.4"
   }
 }
