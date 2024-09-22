@@ -62,7 +62,7 @@ if (!results.length) {
 results.reverse()
 
 if (options.json) {
-  console.log(JSON.stringify(results)) 
+  console.log(JSON.stringify(results))
 
 } else {
   for (const { link, title, timestamp } of results) {
