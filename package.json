@@ -5,9 +5,8 @@
   "exports": "./dist/index.js",
   "type": "module",
   "scripts": {
-    "dev": "bun run ./index.ts",
-    "dist": "bun build ./index.ts --target node --outfile dist/index.js",
-    "local-install": "bun build ./index.ts --compile --outfile ~/.local/bin/ytcha"
+    "dev": "deno run --allow-all ./index.ts",
+    "install": "deno compile --allow-all --output $HOME/.local/bin/ytcha ./index.ts"
   },
   "keywords": ["youtube", "channel", "videos", "list"],
   "author": "Em Zhan",

@@ -1,4 +1,5 @@
 import { program } from 'commander'
+import process from 'node:process';
 import puppeteer, { SupportedBrowser } from 'puppeteer'
 import which from 'which'
 

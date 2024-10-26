@@ -48,12 +48,13 @@ Output (including [OSC 8 links](https://github.com/Alhadis/OSC8-Adoption)):
 
 ## Installation
 
-Requires [Bun](https://bun.sh), for now; adjust `--outfile` as needed:
+Requires [Deno](https://deno.com/), for now; adjust `--output` as needed:
 
 ```sh
 git clone https://github.com/zqianem/ytcha
 cd ytcha
-bun build ./index.ts --compile --outfile ~/.local/bin/ytcha
+deno install --quiet
+deno compile --allow-all --output $HOME/.local/bin/ytcha ./index.ts
 ```
 
 Might make this installable via NPM later.
