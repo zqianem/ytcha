@@ -14,9 +14,9 @@
   "license": "MIT",
   "packageManager": "bun",
   "dependencies": {
-    "commander": "^12.1.0",
-    "puppeteer": "^23.4.0",
-    "which": "^4.0.0"
+    "commander": "^13.1.0",
+    "puppeteer": "^24.1.0",
+    "which": "^5.0.0"
   },
   "devDependencies": {
     "@types/which": "^3.0.4"
