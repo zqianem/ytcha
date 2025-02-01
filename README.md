@@ -71,3 +71,15 @@ ytcha formula1 | rg highlights
 
 where `rg` is [ripgrep](https://github.com/BurntSushi/ripgrep) with
 `--smart-case` enabled by default in config.
+
+## Vods
+
+To further avoid spoilers, consider adding the following
+[uBlock Origin](https://ublockorigin.com/) filters:
+
+```
+www.youtube.com##.ytp-progress-bar
+www.youtube.com##.notranslate.ytp-time-display
+```
+
+This will prevent you from knowing how long the video is.
