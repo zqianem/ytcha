@@ -1,6 +1,6 @@
 # ytcha
 
-A CLI to scape a list of recent videos from a specific YouTube channel to allow
+A CLI to scrape a list of recent videos from a specific YouTube channel to allow
 them to be piped to tools like `grep` and `jq`.
 
 See `ytcha --help` for details.
