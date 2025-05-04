@@ -5,7 +5,7 @@ them to be piped to tools like `grep` and `jq`.
 
 See `ytcha --help` for details.
 
-## Demo
+## Try it out
 
 Install the [pnpm](https://pnpm.io/installation) package manager, then run:
 
@@ -60,7 +60,7 @@ pnpm install
 pnpm deno compile --allow-all --output ~/.local/bin/ytcha ./index.js
 ```
 
-## Why
+## Why did I make this?
 
 The Formula 1 channel kept putting out videos with titles that would spoil the
 outcome of their highlights (e.g. Max Verstappen's Qualifying Lap), so I made
@@ -73,7 +73,7 @@ ytcha formula1 | rg highlights
 where `rg` is [ripgrep](https://github.com/BurntSushi/ripgrep) with
 `--smart-case` enabled by default in config.
 
-## Vods
+## Spoiler-free VODs
 
 To further avoid spoilers, consider adding the following
 [uBlock Origin](https://ublockorigin.com/) filters:
