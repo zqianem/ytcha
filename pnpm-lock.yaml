@@ -21,6 +21,9 @@ importers:
       '@types/which':
         specifier: ^3.0.4
         version: 3.0.4
+      deno:
+        specifier: ^2.3.1
+        version: 2.3.1
 
 packages:
 
@@ -31,6 +34,36 @@ packages:
   '@babel/helper-validator-identifier@7.25.9':
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
     engines: {node: '>=6.9.0'}
+
+  '@deno/darwin-arm64@2.3.1':
+    resolution: {integrity: sha512-lKUfHFvtygPNajIUY7QTjpGyIetOSRD+NCsZjiWlyXVPzZQLSXYtqRSDth31N9ORs5dP9tj0/rnho0yoF08lyg==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@deno/darwin-x64@2.3.1':
+    resolution: {integrity: sha512-NoKA2HLnlCk/oVTE+YJr0zYtT0hGdLd9fM09RAXNHQmgn572NoK2Mbs+maZJxHRw30QOXqoheOwi+S8Z9turzQ==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@deno/linux-arm64-glibc@2.3.1':
+    resolution: {integrity: sha512-/sc7tDVZHmjfNO5ghuIQINlHugyBhqMr6/tCtSdi/3rWA3lfP2OV3gh4myVjOurR0kaB5HjrLpxXVUq5hD5Vag==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@deno/linux-x64-glibc@2.3.1':
+    resolution: {integrity: sha512-ipQqXDtjc3Lln1q1TuPG7SygWrxJga1RODofP/pNwozc14wwZEeCNE4z7z4jDqes6eH5XL8ZH+qZa5beS7118Q==}
+    cpu: [x64]
+    os: [linux]
+
+  '@deno/win32-arm64@2.3.1':
+    resolution: {integrity: sha512-UKwl7uqmuP4qcTR210ZlwozFqH5eb7o3cgNgp5eXZSdFbejKxz+dTKsiSOMjoxTbbKZHofVdp/Dc7jVUvlwShQ==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@deno/win32-x64@2.3.1':
+    resolution: {integrity: sha512-vbnSEXjL3+dz6EwvV8qUFrDvtluQQdYxEJo+FaSkUu9x2Hws5YpLln4l0tT/KS58RXI9DpWS9dxwMIPbe5kQQQ==}
+    cpu: [x64]
+    os: [win32]
 
   '@puppeteer/browsers@2.10.2':
     resolution: {integrity: sha512-i4Ez+s9oRWQbNjtI/3+jxr7OH508mjAKvza0ekPJem0ZtmsYHP3B5dq62+IaBHKaGCOuqJxXzvFLUhJvQ6jtsQ==}
@@ -157,6 +190,10 @@ packages:
   degenerator@5.0.1:
     resolution: {integrity: sha512-TllpMR/t0M5sqCXfj85i4XaAzxmS5tVA16dqvdkMwGmzI+dXLXnw3J+3Vdv7VKw+ThlTMboK6i9rnZ6Nntj5CQ==}
     engines: {node: '>= 14'}
+
+  deno@2.3.1:
+    resolution: {integrity: sha512-ZkXW3Th3BvfhSz2XjVdlFIQby8+jimiG1NdEOa5dadxMMNCPlvSgMzTwhFgFQIal7w12F5QQSf82i2ruHq0n6w==}
+    hasBin: true
 
   devtools-protocol@0.0.1425554:
     resolution: {integrity: sha512-uRfxR6Nlzdzt0ihVIkV+sLztKgs7rgquY/Mhcv1YNCWDh5IZgl5mnn2aeEnW5stYTE0wwiF4RYVz8eMEpV1SEw==}
@@ -437,6 +474,24 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.25.9': {}
 
+  '@deno/darwin-arm64@2.3.1':
+    optional: true
+
+  '@deno/darwin-x64@2.3.1':
+    optional: true
+
+  '@deno/linux-arm64-glibc@2.3.1':
+    optional: true
+
+  '@deno/linux-x64-glibc@2.3.1':
+    optional: true
+
+  '@deno/win32-arm64@2.3.1':
+    optional: true
+
+  '@deno/win32-x64@2.3.1':
+    optional: true
+
   '@puppeteer/browsers@2.10.2':
     dependencies:
       debug: 4.4.0
@@ -549,6 +604,15 @@ snapshots:
       ast-types: 0.13.4
       escodegen: 2.1.0
       esprima: 4.0.1
+
+  deno@2.3.1:
+    optionalDependencies:
+      '@deno/darwin-arm64': 2.3.1
+      '@deno/darwin-x64': 2.3.1
+      '@deno/linux-arm64-glibc': 2.3.1
+      '@deno/linux-x64-glibc': 2.3.1
+      '@deno/win32-arm64': 2.3.1
+      '@deno/win32-x64': 2.3.1
 
   devtools-protocol@0.0.1425554: {}
 

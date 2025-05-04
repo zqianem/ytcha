@@ -5,7 +5,8 @@
   "bin": "./index.js",
   "type": "module",
   "scripts": {
-    "dev": "node ./index.js"
+    "dev": "deno run --allow-all ./index.js",
+    "local-install": "deno compile --allow-all --output ~/.local/bin/ytcha ./index.js"
   },
   "keywords": ["youtube", "channel", "videos", "list"],
   "author": "Em Zhan",
@@ -17,6 +18,7 @@
     "which": "^5.0.0"
   },
   "devDependencies": {
-    "@types/which": "^3.0.4"
+    "@types/which": "^3.0.4",
+    "deno": "^2.3.1"
   }
 }

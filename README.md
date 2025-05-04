@@ -46,6 +46,17 @@ Output (including [OSC 8 links](https://github.com/Alhadis/OSC8-Adoption)):
 🔗 Etho Plays Minecraft - Episode 587: Trial Chambers • 2 weeks ago
 ```
 
+## Installing the `ytcha` binary locally
+
+Adjust the path after `--output` as needed:
+
+```sh
+git clone https://github.com/zqianem/ytcha
+cd ytcha
+pnpm install
+pnpm deno compile --allow-all --output ~/.local/bin/ytcha ./index.js
+```
+
 ## Why
 
 The Formula 1 channel kept putting out videos with titles that would spoil the

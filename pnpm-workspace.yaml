@@ -1,2 +1,3 @@
 ignoredBuiltDependencies:
+  - deno
   - puppeteer
