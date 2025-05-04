@@ -7,6 +7,8 @@ See `ytcha --help` for details.
 
 ## Demo
 
+Install the [pnpm](https://pnpm.io/installation) package manager, then run:
+
 ```sh
 pnpx https://github.com/zqianem/ytcha ethoslab
 ```
@@ -48,7 +50,8 @@ Output (including [OSC 8 links](https://github.com/Alhadis/OSC8-Adoption)):
 
 ## Installing the `ytcha` binary locally
 
-Adjust the path after `--output` as needed:
+First, ensure you have [pnpm](https://pnpm.io/installation) installed. Adjust
+the path after `--output` as needed:
 
 ```sh
 git clone https://github.com/zqianem/ytcha
