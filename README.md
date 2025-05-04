@@ -8,7 +8,7 @@ See `ytcha --help` for details.
 ## Demo
 
 ```sh
-npx https://github.com/zqianem/ytcha ethoslab
+pnpx https://github.com/zqianem/ytcha ethoslab
 ```
 
 Output (including [OSC 8 links](https://github.com/Alhadis/OSC8-Adoption)):
