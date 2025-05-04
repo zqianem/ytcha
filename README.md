@@ -8,7 +8,7 @@ See `ytcha --help` for details.
 ## Demo
 
 ```sh
-ytcha ethoslab
+npx https://github.com/zqianem/ytcha ethoslab
 ```
 
 Output (including [OSC 8 links](https://github.com/Alhadis/OSC8-Adoption)):
@@ -45,19 +45,6 @@ Output (including [OSC 8 links](https://github.com/Alhadis/OSC8-Adoption)):
 🔗 Hermitcraft S10#9: Walking To The Horizon • 1 month ago
 🔗 Etho Plays Minecraft - Episode 587: Trial Chambers • 2 weeks ago
 ```
-
-## Installation
-
-Requires [Bun](https://bun.sh), for now; adjust `--outfile` as needed:
-
-```sh
-git clone https://github.com/zqianem/ytcha
-cd ytcha
-bun install
-bun build ./index.ts --compile --outfile ~/.local/bin/ytcha
-```
-
-Might make this installable via NPM later.
 
 ## Why
 

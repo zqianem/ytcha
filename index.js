@@ -1,5 +1,5 @@
 import { program } from 'commander'
-import puppeteer, { SupportedBrowser } from 'puppeteer'
+import puppeteer from 'puppeteer'
 import which from 'which'
 
 program
@@ -12,15 +12,18 @@ program
 const channel = program.args[0]
 const options = program.opts()
 
-const browsers: Record<string, SupportedBrowser> = {
+/** @type {Record<string, SupportedBrowser>} */
+const browsers  = {
   brave: 'chrome',
   chromium: 'chrome',
   chrome: 'chrome',
   firefox: 'firefox',
 }
 
-let executablePath: string | undefined = undefined
-let browser: SupportedBrowser | undefined = undefined
+/** @type {string | undefined} */
+let executablePath = undefined
+/** @type {import('puppeteer').SupportedBrowser | undefined} */
+let browser = undefined
 
 for (const [key, value] of Object.entries(browsers)) {
   try {

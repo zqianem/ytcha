@@ -2,17 +2,15 @@
   "name": "ytcha",
   "version": "1.0.0",
   "description": "CLI that lists the latest videos from a YouTube channel",
-  "exports": "./dist/index.js",
+  "bin": "./index.js",
   "type": "module",
   "scripts": {
-    "dev": "bun run ./index.ts",
-    "dist": "bun build ./index.ts --target node --outfile dist/index.js",
-    "local-install": "bun build ./index.ts --compile --outfile ~/.local/bin/ytcha"
+    "dev": "node ./index.js"
   },
   "keywords": ["youtube", "channel", "videos", "list"],
   "author": "Em Zhan",
   "license": "MIT",
-  "packageManager": "bun",
+  "packageManager": "pnpm@10.10.0",
   "dependencies": {
     "commander": "^13.1.0",
     "puppeteer": "^24.1.0",
