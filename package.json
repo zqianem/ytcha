@@ -8,13 +8,18 @@
     "dev": "deno run --allow-all ./index.js",
     "local-install": "deno compile --allow-all --output ~/.local/bin/ytcha ./index.js"
   },
-  "keywords": ["youtube", "channel", "videos", "list"],
+  "keywords": [
+    "youtube",
+    "channel",
+    "videos",
+    "list"
+  ],
   "author": "Em Zhan",
   "license": "MIT",
   "packageManager": "pnpm@10.10.0",
   "dependencies": {
     "commander": "^13.1.0",
-    "puppeteer": "^24.1.0",
+    "puppeteer": "^24.8.0",
     "which": "^5.0.0"
   },
   "devDependencies": {
