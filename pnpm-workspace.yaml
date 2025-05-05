@@ -1,3 +1,4 @@
 ignoredBuiltDependencies:
   - deno
   - puppeteer
+useNodeVersion: 22.15.0
