@@ -7,7 +7,8 @@ See `ytcha --help` for details.
 
 ## Try it out
 
-Install the [pnpm](https://pnpm.io/installation) package manager, then run:
+Install the [pnpm](https://pnpm.io/installation) package manager and
+[git](https://git-scm.com/downloads), then run:
 
 ```sh
 pnpx https://github.com/zqianem/ytcha ethoslab
@@ -46,6 +47,13 @@ Output (including [OSC 8 links](https://github.com/Alhadis/OSC8-Adoption)):
 🔗 Etho Plays Minecraft - Episode 586: Chaos To Order • 2 months ago
 🔗 Hermitcraft S10#9: Walking To The Horizon • 1 month ago
 🔗 Etho Plays Minecraft - Episode 587: Trial Chambers • 2 weeks ago
+```
+
+If you encounter the error `exec: node: not found`, try the following before
+retrying the command above:
+
+```sh
+pnpm env use --global lts
 ```
 
 ## Installing the `ytcha` binary locally
