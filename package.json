@@ -18,12 +18,12 @@
   "license": "MIT",
   "packageManager": "pnpm@10.10.0",
   "dependencies": {
-    "commander": "^13.1.0",
-    "puppeteer": "^24.8.0",
+    "commander": "^14.0.0",
+    "puppeteer": "^24.10.0",
     "which": "^5.0.0"
   },
   "devDependencies": {
     "@types/which": "^3.0.4",
-    "deno": "^2.3.1"
+    "deno": "^2.3.5"
   }
 }
