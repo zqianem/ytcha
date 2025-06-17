@@ -12,8 +12,8 @@ importers:
         specifier: ^14.0.0
         version: 14.0.0
       puppeteer:
-        specifier: ^24.10.0
-        version: 24.10.0
+        specifier: ^24.10.1
+        version: 24.10.1
       which:
         specifier: ^5.0.0
         version: 5.0.0
@@ -22,8 +22,8 @@ importers:
         specifier: ^3.0.4
         version: 3.0.4
       deno:
-        specifier: ^2.3.5
-        version: 2.3.5
+        specifier: ^2.3.6
+        version: 2.3.6
 
 packages:
 
@@ -35,33 +35,33 @@ packages:
     resolution: {integrity: sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==}
     engines: {node: '>=6.9.0'}
 
-  '@deno/darwin-arm64@2.3.5':
-    resolution: {integrity: sha512-aXdxFt/GjVAUlGkqNmmXHPvHUfrOlttWnoHdHm91zxXHvz6Iw5e/uN6huXWcEIb5uXgu43q9KeKFFqNGoRBUpw==}
+  '@deno/darwin-arm64@2.3.6':
+    resolution: {integrity: sha512-9G4TrwKeQWUxfGSVnlizSMfGuU4Oc7eku7swv7ol6kVpNGuFoSunYcULMpLSve9/0HACFJdNy3Pf7GWlW0oWOQ==}
     cpu: [arm64]
     os: [darwin]
 
-  '@deno/darwin-x64@2.3.5':
-    resolution: {integrity: sha512-0APfmYq+988sTb+Pp9ot+JZqrYHjJdqrF3U3j+8zZszxD4UgjpXmnO7wuvrO4rFvFktByNKk2Qvmq0aAtMUd8A==}
+  '@deno/darwin-x64@2.3.6':
+    resolution: {integrity: sha512-TLntEJ1r7mxlv5p6J4xR6xiLEmjV20cnkc+6GOCG1E9sLcL8qrMa5lyXP25tY1WWFie6SX7iJlDtW8BFGXtztg==}
     cpu: [x64]
     os: [darwin]
 
-  '@deno/linux-arm64-glibc@2.3.5':
-    resolution: {integrity: sha512-NE3Ntkf+7X75UfLREVHjLm2wLdeTAt34I8secI8+MLmtiWGtRcJqihnm81SsF3objOLHFDFIeSIT9DHSD2IjDw==}
+  '@deno/linux-arm64-glibc@2.3.6':
+    resolution: {integrity: sha512-XRKA2QfhGINAqPBHo2SZIVTGyjVQVonB1tkiaeWYFrQPaljnZrG1qddb4NJYYBpQA34BVV6DqHtIw82UyfXuDw==}
     cpu: [arm64]
     os: [linux]
 
-  '@deno/linux-x64-glibc@2.3.5':
-    resolution: {integrity: sha512-IQ0QBAEw+3LxLtlU8mxYQw7N8NhTSBClFGGUCjqTA3g+mFdecVH8TAlkm/p44galVohrUZmIo211HqY2InZnMQ==}
+  '@deno/linux-x64-glibc@2.3.6':
+    resolution: {integrity: sha512-gpRWNxl9xbGV3PdFnSQAguAbLnFnc8E0akVoSazXHAf+gd7J8kdlx0EIA1Zd28fCaxAkSbBlrZQvoRrixLUyAg==}
     cpu: [x64]
     os: [linux]
 
-  '@deno/win32-arm64@2.3.5':
-    resolution: {integrity: sha512-HPuUSGtHlMuv26Ug4yR77KsLDVvzrZumy49ge/e17kQtAdGC07j5n5vawsviNKLttGqFFonkEPr0vquhq+2+Cw==}
+  '@deno/win32-arm64@2.3.6':
+    resolution: {integrity: sha512-NL8qR/NFNPGb9c0a/d4V5rzPDkLEvbBsTC4dbd30/wIv5teEpvL3fk9BdsgBlfAwVv2pwph3MpG2LTGFfZnPRA==}
     cpu: [arm64]
     os: [win32]
 
-  '@deno/win32-x64@2.3.5':
-    resolution: {integrity: sha512-KCF6Yp0y8Sy2f5TXIzLh3P0MvlhI6KanIFqt60+RQJfdklTmGmMGfrW7cC4OYSKHOKJaOPjdQce3HNL3DcycvA==}
+  '@deno/win32-x64@2.3.6':
+    resolution: {integrity: sha512-7gtv7CTRciCkVope6q7AgRZlGF4gqqKgzDdZoyM7bIg/SLJ6iW2CInS5zoFhrL+dmImw58LQOXe0xp3lb/yzGQ==}
     cpu: [x64]
     os: [win32]
 
@@ -73,8 +73,8 @@ packages:
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
 
-  '@types/node@22.15.30':
-    resolution: {integrity: sha512-6Q7lr06bEHdlfplU6YRbgG1SFBdlsfNC4/lX+SkhiTs0cpJkOElmWls8PxDFv4yY/xKb8Y6SO0OmSX4wgqTZbA==}
+  '@types/node@24.0.3':
+    resolution: {integrity: sha512-R4I/kzCYAdRLzfiCabn9hxWfbuHS573x+r0dJMkkzThEa7pbrcDWK+9zu3e7aBOouf+rQAciqPFMnxwr0aWgKg==}
 
   '@types/which@3.0.4':
     resolution: {integrity: sha512-liyfuo/106JdlgSchJzXEQCVArk0CvevqPote8F8HgWgJ3dRCcTHgJIsLDuee0kxk/mhbInzIZk3QWSZJ8R+2w==}
@@ -191,8 +191,8 @@ packages:
     resolution: {integrity: sha512-TllpMR/t0M5sqCXfj85i4XaAzxmS5tVA16dqvdkMwGmzI+dXLXnw3J+3Vdv7VKw+ThlTMboK6i9rnZ6Nntj5CQ==}
     engines: {node: '>= 14'}
 
-  deno@2.3.5:
-    resolution: {integrity: sha512-4nGPpug2LmZ3kTinnkbiSUmoqSYmerTTjr2OxKw4xrno5W4ILR1dfmVpDsQN8oecT9mEUw+3r/xamdiRNcKBog==}
+  deno@2.3.6:
+    resolution: {integrity: sha512-jf7fIT42W/MTphxxqJgcJKbVvciWFfQxZ8Kl/14aPMZs6du2eWjyS51ZIJvhEh+E4STnngH5XNI3bbCrgBMdGg==}
     hasBin: true
 
   devtools-protocol@0.0.1452169:
@@ -201,8 +201,8 @@ packages:
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
 
-  end-of-stream@1.4.4:
-    resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
+  end-of-stream@1.4.5:
+    resolution: {integrity: sha512-ooEGc6HP26xXq/N+GCGOT0JKCLDGrq2bQUZrQ7gyrJiZANJ/8YDTxTpQBXGMn+WbIQXNVpyWymm7KYVICQnyOg==}
 
   env-paths@2.2.1:
     resolution: {integrity: sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A==}
@@ -349,15 +349,15 @@ packages:
   proxy-from-env@1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
 
-  pump@3.0.2:
-    resolution: {integrity: sha512-tUPXtzlGM8FE3P0ZL6DVs/3P58k9nk8/jZeQCurTJylQA8qFYzHFfhBJkuqyE0FifOsQ0uKWekiZ5g8wtr28cw==}
+  pump@3.0.3:
+    resolution: {integrity: sha512-todwxLMY7/heScKmntwQG8CXVkWUOdYxIvY2s0VWAAMh/nd8SoYiRaKjlr7+iCs984f2P8zvrfWcDDYVb73NfA==}
 
-  puppeteer-core@24.10.0:
-    resolution: {integrity: sha512-xX0QJRc8t19iAwRDsAOR38Q/Zx/W6WVzJCEhKCAwp2XMsaWqfNtQ+rBfQW9PlF+Op24d7c8Zlgq9YNmbnA7hdQ==}
+  puppeteer-core@24.10.1:
+    resolution: {integrity: sha512-AE6doA9znmEEps/pC5lc9p0zejCdNLR6UBp3EZ49/15Nbvh+uklXxGox7Qh8/lFGqGVwxInl0TXmsOmIuIMwiQ==}
     engines: {node: '>=18'}
 
-  puppeteer@24.10.0:
-    resolution: {integrity: sha512-Oua9VkGpj0S2psYu5e6mCer6W9AU9POEQh22wRgSXnLXASGH+MwLUVWgLCLeP9QPHHcJ7tySUlg4Sa9OJmaLpw==}
+  puppeteer@24.10.1:
+    resolution: {integrity: sha512-7T3rfSaaPt5A31VITV5YKQ4wPCCv4aPn8byDaV+9lhDU9v7BWYY4Ncwerw3ZR5mIolrh/PvzGdIDK7yiBth75g==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -382,8 +382,8 @@ packages:
     resolution: {integrity: sha512-HehCEsotFqbPW9sJ8WVYB6UbmIMv7kUUORIF2Nncq4VQvBfNBLibW9YZR5dlYCSUhwcD628pRllm7n+E+YTzJw==}
     engines: {node: '>= 14'}
 
-  socks@2.8.4:
-    resolution: {integrity: sha512-D3YaD0aRxR3mEcqnidIs7ReYJFVzWdd6fXJYUM8ixcQcJRGTka/b3saV0KflYhyVJXKhb947GndU35SxYNResQ==}
+  socks@2.8.5:
+    resolution: {integrity: sha512-iF+tNDQla22geJdTyJB1wM/qrX9DMRwWrciEPwWLPRWAUEM8sQiyxgckLxWT1f7+9VabJS0jTGGr4QgBuvi6Ww==}
     engines: {node: '>= 10.0.0', npm: '>= 3.0.0'}
 
   source-map@0.6.1:
@@ -404,8 +404,8 @@ packages:
     resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}
     engines: {node: '>=8'}
 
-  tar-fs@3.0.9:
-    resolution: {integrity: sha512-XF4w9Xp+ZQgifKakjZYmFdkLoSWd34VGKcsTCwlNWM7QG3ZbaxnTsaBwnjFZqHRf/rROxaR8rXnbtwdvaDI+lA==}
+  tar-fs@3.0.10:
+    resolution: {integrity: sha512-C1SwlQGNLe/jPNqapK8epDsXME7CAJR5RL3GcE6KWx1d9OUByzoHVcbu1VPI8tevg9H8Alae0AApHHFGzrD5zA==}
 
   tar-stream@3.1.7:
     resolution: {integrity: sha512-qJj60CXt7IU1Ffyc3NJMjh6EkuCFej46zUqJ4J7pqYlThyd9bO0XBTmcOIhSzZJVWfsLks0+nle/j538YAW9RQ==}
@@ -419,8 +419,8 @@ packages:
   typed-query-selector@2.12.0:
     resolution: {integrity: sha512-SbklCd1F0EiZOyPiW192rrHZzZ5sBijB6xM+cpmrwDqObvdtunOHHIk9fCGsoK5JVIYXoyEp4iEdE3upFH3PAg==}
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+  undici-types@7.8.0:
+    resolution: {integrity: sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw==}
 
   which@5.0.0:
     resolution: {integrity: sha512-JEdGzHwwkrbWoGOlIHqQ5gtprKGOenpDHpxE9zVR1bWbOtYRyPPHMe9FaP6x61CmNaTThSkb0DAJte5jD+DmzQ==}
@@ -461,8 +461,8 @@ packages:
   yauzl@2.10.0:
     resolution: {integrity: sha512-p4a9I6X6nu6IhoGmBqAcbJy1mlC4j27vEPZX9F4L4/vZT3Lyq1VkFHw/V/PUcB9Buo+DG3iHkT0x3Qya58zc3g==}
 
-  zod@3.25.56:
-    resolution: {integrity: sha512-rd6eEF3BTNvQnR2e2wwolfTmUTnp70aUTqr0oaGbHifzC3BKJsoV+Gat8vxUMR1hwOKBs6El+qWehrHbCpW6SQ==}
+  zod@3.25.67:
+    resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
 
 snapshots:
 
@@ -474,22 +474,22 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.27.1': {}
 
-  '@deno/darwin-arm64@2.3.5':
+  '@deno/darwin-arm64@2.3.6':
     optional: true
 
-  '@deno/darwin-x64@2.3.5':
+  '@deno/darwin-x64@2.3.6':
     optional: true
 
-  '@deno/linux-arm64-glibc@2.3.5':
+  '@deno/linux-arm64-glibc@2.3.6':
     optional: true
 
-  '@deno/linux-x64-glibc@2.3.5':
+  '@deno/linux-x64-glibc@2.3.6':
     optional: true
 
-  '@deno/win32-arm64@2.3.5':
+  '@deno/win32-arm64@2.3.6':
     optional: true
 
-  '@deno/win32-x64@2.3.5':
+  '@deno/win32-x64@2.3.6':
     optional: true
 
   '@puppeteer/browsers@2.10.5':
@@ -499,7 +499,7 @@ snapshots:
       progress: 2.0.3
       proxy-agent: 6.5.0
       semver: 7.7.2
-      tar-fs: 3.0.9
+      tar-fs: 3.0.10
       yargs: 17.7.2
     transitivePeerDependencies:
       - bare-buffer
@@ -507,16 +507,16 @@ snapshots:
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
-  '@types/node@22.15.30':
+  '@types/node@24.0.3':
     dependencies:
-      undici-types: 6.21.0
+      undici-types: 7.8.0
     optional: true
 
   '@types/which@3.0.4': {}
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 22.15.30
+      '@types/node': 24.0.3
     optional: true
 
   agent-base@7.1.3: {}
@@ -570,7 +570,7 @@ snapshots:
     dependencies:
       devtools-protocol: 0.0.1452169
       mitt: 3.0.1
-      zod: 3.25.56
+      zod: 3.25.67
 
   cliui@8.0.1:
     dependencies:
@@ -605,20 +605,20 @@ snapshots:
       escodegen: 2.1.0
       esprima: 4.0.1
 
-  deno@2.3.5:
+  deno@2.3.6:
     optionalDependencies:
-      '@deno/darwin-arm64': 2.3.5
-      '@deno/darwin-x64': 2.3.5
-      '@deno/linux-arm64-glibc': 2.3.5
-      '@deno/linux-x64-glibc': 2.3.5
-      '@deno/win32-arm64': 2.3.5
-      '@deno/win32-x64': 2.3.5
+      '@deno/darwin-arm64': 2.3.6
+      '@deno/darwin-x64': 2.3.6
+      '@deno/linux-arm64-glibc': 2.3.6
+      '@deno/linux-x64-glibc': 2.3.6
+      '@deno/win32-arm64': 2.3.6
+      '@deno/win32-x64': 2.3.6
 
   devtools-protocol@0.0.1452169: {}
 
   emoji-regex@8.0.0: {}
 
-  end-of-stream@1.4.4:
+  end-of-stream@1.4.5:
     dependencies:
       once: 1.4.0
 
@@ -664,7 +664,7 @@ snapshots:
 
   get-stream@5.2.0:
     dependencies:
-      pump: 3.0.2
+      pump: 3.0.3
 
   get-uri@6.0.4:
     dependencies:
@@ -778,12 +778,12 @@ snapshots:
 
   proxy-from-env@1.1.0: {}
 
-  pump@3.0.2:
+  pump@3.0.3:
     dependencies:
-      end-of-stream: 1.4.4
+      end-of-stream: 1.4.5
       once: 1.4.0
 
-  puppeteer-core@24.10.0:
+  puppeteer-core@24.10.1:
     dependencies:
       '@puppeteer/browsers': 2.10.5
       chromium-bidi: 5.1.0(devtools-protocol@0.0.1452169)
@@ -797,13 +797,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  puppeteer@24.10.0:
+  puppeteer@24.10.1:
     dependencies:
       '@puppeteer/browsers': 2.10.5
       chromium-bidi: 5.1.0(devtools-protocol@0.0.1452169)
       cosmiconfig: 9.0.0
       devtools-protocol: 0.0.1452169
-      puppeteer-core: 24.10.0
+      puppeteer-core: 24.10.1
       typed-query-selector: 2.12.0
     transitivePeerDependencies:
       - bare-buffer
@@ -824,11 +824,11 @@ snapshots:
     dependencies:
       agent-base: 7.1.3
       debug: 4.4.1
-      socks: 2.8.4
+      socks: 2.8.5
     transitivePeerDependencies:
       - supports-color
 
-  socks@2.8.4:
+  socks@2.8.5:
     dependencies:
       ip-address: 9.0.5
       smart-buffer: 4.2.0
@@ -855,9 +855,9 @@ snapshots:
     dependencies:
       ansi-regex: 5.0.1
 
-  tar-fs@3.0.9:
+  tar-fs@3.0.10:
     dependencies:
-      pump: 3.0.2
+      pump: 3.0.3
       tar-stream: 3.1.7
     optionalDependencies:
       bare-fs: 4.1.5
@@ -879,7 +879,7 @@ snapshots:
 
   typed-query-selector@2.12.0: {}
 
-  undici-types@6.21.0:
+  undici-types@7.8.0:
     optional: true
 
   which@5.0.0:
@@ -915,4 +915,4 @@ snapshots:
       buffer-crc32: 0.2.13
       fd-slicer: 1.1.0
 
-  zod@3.25.56: {}
+  zod@3.25.67: {}

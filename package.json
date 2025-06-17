@@ -19,11 +19,11 @@
   "packageManager": "pnpm@10.10.0",
   "dependencies": {
     "commander": "^14.0.0",
-    "puppeteer": "^24.10.0",
+    "puppeteer": "^24.10.1",
     "which": "^5.0.0"
   },
   "devDependencies": {
     "@types/which": "^3.0.4",
-    "deno": "^2.3.5"
+    "deno": "^2.3.6"
   }
 }
