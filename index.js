@@ -5,6 +5,7 @@ import which from 'which'
 program
   .argument('<channel>', 'YouTube channel name, e.g. @EthosLab')
   .option('--json', 'print output in JSON')
+  .option('--show-time', 'include timestamp in output')
   .showHelpAfterError()
   .allowExcessArguments(false)
   .parse()
@@ -46,7 +47,7 @@ const page = await puppet.newPage()
 const url = `https://www.youtube.com/${channel}/videos`
 await page.goto(url)
 
-const results = await page.$$eval('a#video-title-link', (els) => els.map(el => ({
+let results = await page.$$eval('a#video-title-link', (els) => els.map(el => ({
   link: el.href,
   title: el
     .querySelector('#video-title')
@@ -63,6 +64,10 @@ if (!results.length) {
 }
 
 results.reverse()
+
+if (!options.showTime) {
+  results = results.map(r => ({ ...r, timestamp: '[time hidden]' }))
+}
 
 if (options.json) {
   console.log(JSON.stringify(results))

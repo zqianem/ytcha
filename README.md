@@ -11,7 +11,7 @@ Install the [pnpm](https://pnpm.io/installation) package manager and
 [git](https://git-scm.com/downloads), then run:
 
 ```sh
-pnpx https://github.com/zqianem/ytcha ethoslab
+pnpx https://github.com/zqianem/ytcha ethoslab --show-time
 ```
 
 Output (including [OSC 8 links](https://github.com/Alhadis/OSC8-Adoption)):
