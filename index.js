@@ -47,14 +47,14 @@ const page = await puppet.newPage()
 const url = `https://www.youtube.com/${channel}/videos`
 await page.goto(url)
 
-let results = await page.$$eval('a#video-title-link', (els) => els.map(el => ({
+let results = await page.$$eval('a.ytLockupMetadataViewModelTitle', (els) => els.map(el => ({
   link: el.href,
   title: el
-    .querySelector('#video-title')
+    .querySelector('span')
     ?.textContent,
   timestamp: el
-    .closest('#meta')
-    ?.querySelector('.inline-metadata-item:nth-of-type(2)')
+    .closest('.ytLockupMetadataViewModelTextContainer')
+    ?.querySelector('.ytAttributedStringHost:nth-of-type(3)')
     ?.textContent,
 })))
 
