@@ -16,7 +16,6 @@
   ],
   "author": "Em Zhan",
   "license": "MIT",
-  "packageManager": "pnpm@10.10.0",
   "dependencies": {
     "commander": "^14.0.3",
     "puppeteer": "^24.43.1",

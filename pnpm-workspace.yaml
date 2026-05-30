@@ -1,3 +1,6 @@
+allowBuilds:
+  deno: true
+  puppeteer: true
 ignoredBuiltDependencies:
   - deno
   - puppeteer
