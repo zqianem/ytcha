@@ -54,7 +54,8 @@ let results = await page.$$eval('a.ytLockupMetadataViewModelTitle', (els) => els
     ?.textContent,
   timestamp: el
     .closest('.ytLockupMetadataViewModelTextContainer')
-    ?.querySelector('.ytAttributedStringHost:nth-of-type(3)')
+    ?.querySelector('.ytLockupMetadataViewModelMetadata')
+    ?.querySelector('span:last-of-type')
     ?.textContent,
 })))
 
