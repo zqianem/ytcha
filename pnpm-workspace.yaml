@@ -1,7 +1,3 @@
 allowBuilds:
   deno: true
   puppeteer: true
-ignoredBuiltDependencies:
-  - deno
-  - puppeteer
-useNodeVersion: 22.15.0
